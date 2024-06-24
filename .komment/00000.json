@@ -1,15 +1,15 @@
 [
   {
-
+    "name": "source.java",
     "path": "source.java",
     "content": {
       "structured": {
-        "description": "A `PageInfo` class that encapsulates information about a page of data retrieved from a database or other source. The class has fields for the current page number, page size, total pages, and total elements, and provides a constructor for creating instances. Additionally, there is a static method `of` that creates a new `PageInfo` instance based on a provided `Pageable` object and `Page` instance.",
+        "description": "A `PageInfo` class that contains information about the number of pages, size of each page, total number of pages and elements, based on a provided `Pageable` object and a passed `Page` object. The `of()` method creates a new instance of `PageInfo` using the page number, size, total pages, and total elements from the input `Pageable` and `Page` objects.",
         "items": [
           {
-            "id": "08a52f10-c43e-3898-4248-6200312853e8",
+            "id": "ef129b0c-8f11-f598-0443-0e1d89b95742",
             "ancestors": [],
-            "description": "Is an utility class for managing page information, such as current page, limit per page, total pages and total elements. The class provides a constructor to create instances of the class with values from a given pageable and page objects.",
+            "description": "Is a data structure that encapsulates metadata about pages and their elements. It provides information such as the current page number, page size, total number of pages, and total number of elements. This class is used to return page-related metadata based on a provided Pageable object and a passed Page object.",
             "name": "PageInfo",
             "location": {
               "start": 11,
@@ -19,45 +19,48 @@
               "comment": null
             },
             "item_type": "class",
-            "length": 18,
+            "length": 31,
             "docLength": null
           },
           {
-            "id": "019e6737-ddc1-f590-694b-8ba0e546136c",
+            "id": "684444ee-f9e7-dd8f-8b43-7c1f2851ca18",
             "ancestors": [
-              "08a52f10-c43e-3898-4248-6200312853e8"
+              "ef129b0c-8f11-f598-0443-0e1d89b95742"
             ],
-            "description": "Returns a `PageInfo` object containing information about the number of pages, size of each page, total number of pages and elements, based on a provided `Pageable` object and a passed `Page` object.",
+            "description": "Takes a `pageable` and a `page` as input, returns a `PageInfo` object with information about the page number, size, total pages, and total elements.",
             "params": [
               {
                 "name": "pageable",
                 "type_name": "Pageable",
-                "description": "page number and size of the page being queried, which are used to calculate the total pages and elements in the PageInfo object returned by the function.",
+                "description": "pagination information for the current page of data being processed, providing the page number, page size, total pages, and total elements.",
                 "complex_type": false
               },
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page being processed, providing the total number of elements on that page.",
+                "description": "current page being processed, providing information on its position within the overall range of pages and the total number of elements in the collection being paginated.",
                 "complex_type": false
               }
             ],
             "returns": {
               "type_name": "PageInfo",
-              "description": "a `PageInfo` object containing page-related metadata.",
+              "description": "a `PageInfo` object containing information about the page number, size, total pages, and total elements of a pageable.",
               "complex_type": false
             },
             "name": "of",
             "location": {
-              "start": 20,
+              "start": 33,
               "insert": 20,
               "offset": " ",
               "indent": 4,
-              "comment": null
+              "comment": {
+                "start": 19,
+                "end": 32
+              }
             },
             "item_type": "method",
             "length": 8,
-            "docLength": null
+            "docLength": 13
           }
         ]
       }
