@@ -8,7 +8,3 @@ const a = () => {
 
 }
 
-def fun():
-  pass
-  pass
-  pass
