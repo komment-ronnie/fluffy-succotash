@@ -4,66 +4,63 @@
     "path": "source.java",
     "content": {
       "structured": {
-        "description": "A `PageInfo` class that provides information about pagination in Spring Data. It includes four fields: currentPage, pageLimit, totalPages, and totalElements. The class also includes static methods for creating new instances based on a `Pageable` and `Page` objects. The `of()` method generates a `PageInfo` object with various pagination-related information.",
+        "description": "A `PageInfo` class that contains information about the number of pages, page size, total pages, and total elements of a `Pageable` and its corresponding `Page`. The class uses Lombok to simplify the creation of getters, equals, hashCode, and toString methods. The `of()` method creates a new `PageInfo` object based on a provided `Pageable` and `Page`.",
         "items": [
           {
-            "id": "c889cd4b-66b8-3199-b14e-0b8e81d52781",
+            "id": "0bd0bc51-3684-fa80-e441-773dc8a9847f",
             "ancestors": [],
-            "description": "Is a data representation class for page-related information. It stores four values: currentPage, pageLimit, totalPages, and totalElements. The class generates new instances based on a Pageable object and a Page object, providing information about the number of pages, page size, total pages, and total elements for a given set of data.",
+            "description": "Is a summary of page numbers, page sizes, total pages, and total elements in a paginated result. The class provides information on the number of pages and size of each page, as well as the total number of pages and elements in the overall result.",
             "name": "PageInfo",
             "location": {
-              "start": 15,
+              "start": 9,
               "insert": 9,
               "offset": " ",
               "indent": 0,
-              "comment": {
-                "start": 8,
-                "end": 14
-              }
+              "comment": null
             },
             "item_type": "class",
-            "length": 31,
-            "docLength": 6
+            "length": 32,
+            "docLength": null
           },
           {
-            "id": "cc978b27-6674-df90-cf41-6b5c1c84d96f",
+            "id": "2b64e802-8c96-8a8c-0542-c213fde9b685",
             "ancestors": [
-              "c889cd4b-66b8-3199-b14e-0b8e81d52781"
+              "0bd0bc51-3684-fa80-e441-773dc8a9847f"
             ],
-            "description": "Returns a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements of a `Pageable` and its corresponding `Page`.",
+            "description": "Creates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements for a given `Pageable` and `Page`.",
             "params": [
               {
                 "name": "pageable",
                 "type_name": "Pageable",
-                "description": "pageable object that contains information about the current page being processed, including the page number and size.",
+                "description": "pagination information for the page being processed, providing the page number, page size, total pages, and total elements.",
                 "complex_type": false
               },
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page being processed, providing information on its position and size within the overall paginated result.",
+                "description": "current page being processed, providing information on its position and size within the overall paginated dataset.",
                 "complex_type": false
               }
             ],
             "returns": {
               "type_name": "PageInfo",
-              "description": "a `PageInfo` object containing page number, size, total pages, and total elements.",
+              "description": "a `PageInfo` object containing information about the current page of a paginated result.",
               "complex_type": false
             },
             "name": "of",
             "location": {
-              "start": 37,
-              "insert": 25,
+              "start": 32,
+              "insert": 19,
               "offset": " ",
               "indent": 4,
               "comment": {
-                "start": 24,
-                "end": 36
+                "start": 18,
+                "end": 31
               }
             },
             "item_type": "method",
             "length": 8,
-            "docLength": 12
+            "docLength": 13
           }
         ]
       }
