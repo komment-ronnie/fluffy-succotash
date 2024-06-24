@@ -1,5 +1,4 @@
 package com.myhome.utils;
-
 import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
