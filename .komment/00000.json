@@ -4,30 +4,33 @@
     "path": "source.java",
     "content": {
       "structured": {
-        "description": "A class `PageInfo` that contains information about a page of data. It includes current page number, page size, total pages, and total elements. A static method `of` creates a new `PageInfo` instance by passing in a `Pageable` object and a `Page` object.",
+        "description": "A `PageInfo` class that provides information about pagination in Spring Data. It includes four fields: currentPage, pageLimit, totalPages, and totalElements. The class also includes static methods for creating new instances based on a `Pageable` and `Page` objects. The `of()` method generates a `PageInfo` object with various pagination-related information.",
         "items": [
           {
-            "id": "649a67b0-5d43-008a-014d-a2820d06ae24",
+            "id": "c889cd4b-66b8-3199-b14e-0b8e81d52781",
             "ancestors": [],
-            "description": "Provides a way to represent page information for a collection of data. It includes four fields: currentPage, pageLimit, totalPages, and totalElements. The class also includes a static method for creating new instances based on a Pageable object and a Page object.",
+            "description": "Is a data representation class for page-related information. It stores four values: currentPage, pageLimit, totalPages, and totalElements. The class generates new instances based on a Pageable object and a Page object, providing information about the number of pages, page size, total pages, and total elements for a given set of data.",
             "name": "PageInfo",
             "location": {
-              "start": 9,
+              "start": 15,
               "insert": 9,
               "offset": " ",
               "indent": 0,
-              "comment": null
+              "comment": {
+                "start": 8,
+                "end": 14
+              }
             },
             "item_type": "class",
-            "length": 19,
-            "docLength": null
+            "length": 31,
+            "docLength": 6
           },
           {
-            "id": "422fadcb-68d3-6e9b-e24d-9b2731c35ef0",
+            "id": "cc978b27-6674-df90-cf41-6b5c1c84d96f",
             "ancestors": [
-              "649a67b0-5d43-008a-014d-a2820d06ae24"
+              "c889cd4b-66b8-3199-b14e-0b8e81d52781"
             ],
-            "description": "Generates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements for a given `Pageable` and `Page`.",
+            "description": "Returns a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements of a `Pageable` and its corresponding `Page`.",
             "params": [
               {
                 "name": "pageable",
@@ -38,26 +41,29 @@
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page of data being processed, providing the total number of elements on that page.",
+                "description": "current page being processed, providing information on its position and size within the overall paginated result.",
                 "complex_type": false
               }
             ],
             "returns": {
               "type_name": "PageInfo",
-              "description": "a `PageInfo` object containing various pagination-related information.",
+              "description": "a `PageInfo` object containing page number, size, total pages, and total elements.",
               "complex_type": false
             },
             "name": "of",
             "location": {
-              "start": 19,
-              "insert": 19,
+              "start": 37,
+              "insert": 25,
               "offset": " ",
               "indent": 4,
-              "comment": null
+              "comment": {
+                "start": 24,
+                "end": 36
+              }
             },
             "item_type": "method",
             "length": 8,
-            "docLength": null
+            "docLength": 12
           }
         ]
       }

@@ -7,10 +7,11 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 /**
- * Provides a way to represent page information for a collection of data. It includes
- * four fields: currentPage, pageLimit, totalPages, and totalElements. The class also
- * includes a static method for creating new instances based on a Pageable object and
- * a Page object.
+ * Is a data representation class for page-related information. It stores four values:
+ * currentPage, pageLimit, totalPages, and totalElements. The class generates new
+ * instances based on a Pageable object and a Page object, providing information about
+ * the number of pages, page size, total pages, and total elements for a given set
+ * of data.
  */
 @EqualsAndHashCode
 @ToString
@@ -23,16 +24,17 @@ public class PageInfo {
   private final long totalElements;
   
     /**
-     * Generates a `PageInfo` object containing information about the number of pages,
-     * page size, total pages, and total elements for a given `Pageable` and `Page`.
+     * Returns a `PageInfo` object containing information about the number of pages, page
+     * size, total pages, and total elements of a `Pageable` and its corresponding `Page`.
      * 
      * @param pageable pageable object that contains information about the current page
      * being processed, including the page number and size.
      * 
-     * @param page current page of data being processed, providing the total number of
-     * elements on that page.
+     * @param page current page being processed, providing information on its position
+     * and size within the overall paginated result.
      * 
-     * @returns a `PageInfo` object containing various pagination-related information.
+     * @returns a `PageInfo` object containing page number, size, total pages, and total
+     * elements.
      */
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
