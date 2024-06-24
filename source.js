@@ -8,7 +8,7 @@ const a = () => {
 
 }
 
-const a = () => {
+const b = () => {
   console.log("a");
   process.exit(0);
 
