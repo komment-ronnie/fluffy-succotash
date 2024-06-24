@@ -8,11 +8,6 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * Is an utility class for managing page information, such as current page, limit per
- * page, total pages and total elements. The class provides a constructor to create
- * instances of the class with values from a given pageable and page objects.
- */
 @EqualsAndHashCode
 @ToString
 @Getter
