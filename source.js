@@ -12,7 +12,7 @@ const a = () => {
  * @description Logs "a" to the console and then exits the process with a status code
  * of 0.
  */
-const a = () => {
+const b = () => {
   console.log("a");
   process.exit(0);
 
