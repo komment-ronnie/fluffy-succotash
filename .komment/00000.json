@@ -68,41 +68,41 @@
     "path": "source1.java",
     "content": {
       "structured": {
-        "description": "A `PageInfo` class that represents metadata about a page of results from a data source. The class has fields for the current page number, page size, total pages, and total elements. A static method `of` creates an instance of `PageInfo` from a `Pageable` object and a `Page` object.",
+        "description": "A `PageInfo` class that holds information about a page of results from a larger dataset. The class has four fields: currentPage, pageLimit, totalPages, and totalElements, which are initialized using a constructor that takes a `Pageable` object and a `Page` object as parameters. Additionally, a static `of()` method is provided to create a new instance of the `PageInfo` class with the given page number, page size, total pages, and total elements from a `Pageable` and `Page`. The method returns an instance of the `PageInfo` class.",
         "items": [
           {
-            "id": "ed980a9b-e35a-eebf-224f-e0b983f78fae",
+            "id": "f9b78986-5c32-34b8-3642-d753c9280fd6",
             "ancestors": [],
-            "description": "Is a data structure used to represent information about a page of elements. It consists of four fields: currentPage, pageLimit, totalPages, and totalElements. The class provides a convenient way to create instances of PageInfo from a Pageable object and its corresponding Page.",
+            "description": "Provides a compact representation of page metadata for use in Spring Data applications. It includes current and total pages, as well as the number of elements in each page. The class also provides a factory method for creating new instances based on a pageable object and the corresponding page.",
             "name": "PageInfo",
             "location": {
-              "start": 10,
-              "insert": 10,
+              "start": 9,
+              "insert": 9,
               "offset": " ",
               "indent": 0,
               "comment": null
             },
             "item_type": "class",
-            "length": 19,
+            "length": 18,
             "docLength": null
           },
           {
-            "id": "8c16f214-a9f9-1393-0642-b29d462b7a33",
+            "id": "cbf085d6-5755-97be-8745-c89c786c5d56",
             "ancestors": [
-              "ed980a9b-e35a-eebf-224f-e0b983f78fae"
+              "f9b78986-5c32-34b8-3642-d753c9280fd6"
             ],
-            "description": "Returns a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements for a given `Pageable` and `Page`.",
+            "description": "Generates a `PageInfo` object containing information about the current page of a paginated dataset, including the page number, size, total pages, and total elements.",
             "params": [
               {
                 "name": "pageable",
                 "type_name": "Pageable",
-                "description": "pageable object that contains information about the current page being processed, including the number of elements per page and the total number of pages in the dataset.",
+                "description": "page number and size that the method operates on, providing the necessary context for calculating the resulting page information.",
                 "complex_type": false
               },
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page being processed, providing the total number of elements on that page.",
+                "description": "current page being processed, providing information on its position within the paginated data set and the total number of pages and elements available.",
                 "complex_type": false
               }
             ],
@@ -113,14 +113,43 @@
             },
             "name": "of",
             "location": {
-              "start": 20,
-              "insert": 20,
+              "start": 18,
+              "insert": 18,
               "offset": " ",
               "indent": 4,
               "comment": null
             },
             "item_type": "method",
             "length": 8,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "source1.py",
+    "path": "source1.py",
+    "content": {
+      "structured": {
+        "description": "A deep learning model called DepthAnythingV2 and trains it on a dataset for depth estimation using the Hypersim, VKITTI2, or KITTI datasets. The model is trained using the AdamW optimizer and evaluated at various epochs using the SiLogLoss metric. The code also includes a checkpointing system to save the model weights and optimizer states during training.",
+        "items": [
+          {
+            "id": "6404241d-11fc-489b-f543-181f9b442f4d",
+            "ancestors": [],
+            "description": "Generates high-quality summaries of Java code based on user input. It performs various tasks, including setting up a distributed training environment for a depth estimation model using PyTorch and TensorFlow, defining the training and validation sets, and tracking the model's performance during training.",
+            "params": [],
+            "returns": null,
+            "name": "main",
+            "location": {
+              "start": 41,
+              "insert": 42,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 166,
             "docLength": null
           }
         ]
