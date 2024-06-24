@@ -19,3 +19,10 @@ const c = () => {
 
 }
 
+
+const d = () => {
+  console.log("a");
+  process.exit(0);
+
+}
+
