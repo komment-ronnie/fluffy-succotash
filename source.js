@@ -16,10 +16,3 @@ const b = () => {
 
 }
 
-const c = () => {
-  console.log("a");
-  process.exit(0);
-
-}
-
-
