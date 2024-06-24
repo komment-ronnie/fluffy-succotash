@@ -6,13 +6,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-/**
- * Is a data representation class for page-related information. It stores four values:
- * currentPage, pageLimit, totalPages, and totalElements. The class generates new
- * instances based on a Pageable object and a Page object, providing information about
- * the number of pages, page size, total pages, and total elements for a given set
- * of data.
- */
 @EqualsAndHashCode
 @ToString
 @Getter
