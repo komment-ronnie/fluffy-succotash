@@ -4,47 +4,47 @@
     "path": "source.java",
     "content": {
       "structured": {
-        "description": "A `PageInfo` class that provides information about a page of data. The class has fields for the current page number, page size, total pages, and total elements, which are populated using the `Pageable` interface and `Page` interface. A static `of` method creates a new `PageInfo` instance with the given pageable and page parameters.",
+        "description": "A `PageInfo` class that encapsulates information about a page of data retrieved from a database or other source. The class has fields for the current page number, page size, total pages, and total elements, and provides a constructor for creating instances. Additionally, there is a static method `of` that creates a new `PageInfo` instance based on a provided `Pageable` object and `Page` instance.",
         "items": [
           {
-            "id": "70a6a435-f815-ecba-f14b-2cc86377ff44",
+            "id": "08a52f10-c43e-3898-4248-6200312853e8",
             "ancestors": [],
-            "description": "Is used to represent metadata about a page of data. It contains four fields: currentPage, pageLimit, totalPages, and totalElements. These fields are used to calculate various pagination-related metrics, such as the number of pages required to display a certain amount of data or the total number of elements in all pages.",
+            "description": "Is an utility class for managing page information, such as current page, limit per page, total pages and total elements. The class provides a constructor to create instances of the class with values from a given pageable and page objects.",
             "name": "PageInfo",
             "location": {
-              "start": 10,
-              "insert": 10,
+              "start": 11,
+              "insert": 11,
               "offset": " ",
               "indent": 0,
               "comment": null
             },
             "item_type": "class",
-            "length": 19,
+            "length": 18,
             "docLength": null
           },
           {
-            "id": "40c3db18-37e6-21a8-2a4c-dd0295bd9ed7",
+            "id": "019e6737-ddc1-f590-694b-8ba0e546136c",
             "ancestors": [
-              "70a6a435-f815-ecba-f14b-2cc86377ff44"
+              "08a52f10-c43e-3898-4248-6200312853e8"
             ],
-            "description": "Generates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements of a given `Pageable` and `Page`.",
+            "description": "Returns a `PageInfo` object containing information about the number of pages, size of each page, total number of pages and elements, based on a provided `Pageable` object and a passed `Page` object.",
             "params": [
               {
                 "name": "pageable",
                 "type_name": "Pageable",
-                "description": "pageable object that contains information about the current page of data being processed, providing the page number and size for calculation of the total pages and elements in the dataset.",
+                "description": "page number and size of the page being queried, which are used to calculate the total pages and elements in the PageInfo object returned by the function.",
                 "complex_type": false
               },
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page of results being processed, providing the total number of elements on that page.",
+                "description": "current page being processed, providing the total number of elements on that page.",
                 "complex_type": false
               }
             ],
             "returns": {
               "type_name": "PageInfo",
-              "description": "a `PageInfo` object containing pagination information for the given `pageable` and `page`.",
+              "description": "a `PageInfo` object containing page-related metadata.",
               "complex_type": false
             },
             "name": "of",
