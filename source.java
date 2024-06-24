@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
 @EqualsAndHashCode
 @ToString
 @Getter
@@ -16,7 +15,6 @@ public class PageInfo {
   private final int pageLimit;
   private final int totalPages;
   private final long totalElements;
-  
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
         pageable.getPageNumber(),
