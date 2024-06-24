@@ -1,0 +1,66 @@
+[
+  {
+    "name": "source.java",
+    "path": "source.java",
+    "content": {
+      "structured": {
+        "description": "A class `PageInfo` that contains information about a page of data. It includes current page number, page size, total pages, and total elements. A static method `of` creates a new `PageInfo` instance by passing in a `Pageable` object and a `Page` object.",
+        "items": [
+          {
+            "id": "649a67b0-5d43-008a-014d-a2820d06ae24",
+            "ancestors": [],
+            "description": "Provides a way to represent page information for a collection of data. It includes four fields: currentPage, pageLimit, totalPages, and totalElements. The class also includes a static method for creating new instances based on a Pageable object and a Page object.",
+            "name": "PageInfo",
+            "location": {
+              "start": 9,
+              "insert": 9,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "class",
+            "length": 19,
+            "docLength": null
+          },
+          {
+            "id": "422fadcb-68d3-6e9b-e24d-9b2731c35ef0",
+            "ancestors": [
+              "649a67b0-5d43-008a-014d-a2820d06ae24"
+            ],
+            "description": "Generates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements for a given `Pageable` and `Page`.",
+            "params": [
+              {
+                "name": "pageable",
+                "type_name": "Pageable",
+                "description": "pageable object that contains information about the current page being processed, including the page number and size.",
+                "complex_type": false
+              },
+              {
+                "name": "page",
+                "type_name": "Page<?>",
+                "description": "current page of data being processed, providing the total number of elements on that page.",
+                "complex_type": false
+              }
+            ],
+            "returns": {
+              "type_name": "PageInfo",
+              "description": "a `PageInfo` object containing various pagination-related information.",
+              "complex_type": false
+            },
+            "name": "of",
+            "location": {
+              "start": 19,
+              "insert": 19,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "method",
+            "length": 8,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  }
+]
