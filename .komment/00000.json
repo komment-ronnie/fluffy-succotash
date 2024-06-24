@@ -1,0 +1,66 @@
+[
+  {
+    "name": "source.java",
+    "path": "source.java",
+    "content": {
+      "structured": {
+        "description": "A `PageInfo` class that represents information about a page of results in a data set. It provides getters and setters for currentPage, pageLimit, totalPages, and totalElements, as well as a constructor that initializes these values based on a provided Pageable object and a Page object. The `of()` method creates a new `PageInfo` instance with the given page number, page size, total pages, and total elements.",
+        "items": [
+          {
+            "id": "c69c1a86-88d8-1ca2-824c-720ff9835215",
+            "ancestors": [],
+            "description": "Is designed to contain information about a page of data retrieved from a larger dataset. It has four attributes: currentPage, pageLimit, totalPages, and totalElements. These attributes provide details on the current page being displayed, the number of elements per page, the total number of pages, and the total number of elements in the dataset, respectively. The class also includes a constructor for creating new instances of PageInfo based on a provided Pageable object and the corresponding Page object.",
+            "name": "PageInfo",
+            "location": {
+              "start": 9,
+              "insert": 9,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "class",
+            "length": 19,
+            "docLength": null
+          },
+          {
+            "id": "c88515ef-f9f0-4faa-d14c-47445f7b874a",
+            "ancestors": [
+              "c69c1a86-88d8-1ca2-824c-720ff9835215"
+            ],
+            "description": "Takes a `pageable` and a `page` as input and returns a `PageInfo` object containing information about the page number, size, total pages, and total elements.",
+            "params": [
+              {
+                "name": "pageable",
+                "type_name": "Pageable",
+                "description": "page parameters of a pagination, providing the number of pages and elements per page.",
+                "complex_type": false
+              },
+              {
+                "name": "page",
+                "type_name": "Page<?>",
+                "description": "current page being processed, providing information on its number, size, total pages, and total elements.",
+                "complex_type": false
+              }
+            ],
+            "returns": {
+              "type_name": "PageInfo",
+              "description": "a `PageInfo` object containing page number, page size, total pages, and total elements.",
+              "complex_type": false
+            },
+            "name": "of",
+            "location": {
+              "start": 19,
+              "insert": 19,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "method",
+            "length": 8,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  }
+]
