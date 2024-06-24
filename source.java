@@ -7,12 +7,6 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * Is a data structure used to represent page information for paginated data. It
- * provides the current page number, page limit, total pages, and total elements in
- * a concise manner. The class follows the principles of Lombok, which enables automated
- * generation of getters, equals, hash code, and toString methods.
- */
 @EqualsAndHashCode
 @ToString
 @Getter
