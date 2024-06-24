@@ -4,10 +4,10 @@
     "path": "source.java",
     "content": {
       "structured": {
-        "description": "A `PageInfo` class that encapsulates information about pages and elements in a query result. It provides current page number, page limit, total pages, and total elements through access modifiers, automatic creation of getters, setters, and toString methods using Lombok. Additionally, the class provides a constructor for creating `PageInfo` objects from pageable and page information, and a static method for creating `PageInfo` objects from pageable and current page information.",
+        "description": "A `PageInfo` class that encapsulates information about pages and elements in a query result. It provides current page number, page limit, total pages, and total elements through Lombok-implemented getters, setters, and toString methods. The `of()` method generates a `PageInfo` object based on pageable and page parameters, providing information on the page number, size, total pages, and total elements within the Pageable object.",
         "items": [
           {
-            "id": "e2af6716-9339-2598-844a-1d096a787999",
+            "id": "0e41a97a-f8cb-5ca2-7744-8feea8e4f2ce",
             "ancestors": [],
             "description": "Is a data structure that encapsulates information about pages and elements in a query result. It provides current page number, page limit, total pages, and total elements. The class uses Lombok to implement access modifiers and automatic creation of getters, setters, and toString methods.",
             "name": "PageInfo",
@@ -22,48 +22,48 @@
               }
             },
             "item_type": "class",
-            "length": 30,
+            "length": 31,
             "docLength": 6
           },
           {
-            "id": "5141d1d9-3fc6-cc90-8d4b-5f72ecd8b97e",
+            "id": "08fe0859-191c-babd-8c42-19f034ff92fb",
             "ancestors": [
-              "e2af6716-9339-2598-844a-1d096a787999"
+              "0e41a97a-f8cb-5ca2-7744-8feea8e4f2ce"
             ],
             "description": "Generates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements of a given pageable and page.",
             "params": [
               {
                 "name": "pageable",
                 "type_name": "Pageable",
-                "description": "page request parameters, such as the page number and page size, which are used to determine the corresponding page of data.",
+                "description": "page number and size of the page being processed, which is used to calculate the total pages and elements in the PageInfo object returned by the function.",
                 "complex_type": false
               },
               {
                 "name": "page",
                 "type_name": "Page<?>",
-                "description": "current page being processed, providing information on its position, size, total pages, and total elements within thePageable object.",
+                "description": "current page being processed, providing the total number of elements on that page.",
                 "complex_type": false
               }
             ],
             "returns": {
               "type_name": "PageInfo",
-              "description": "a `PageInfo` object containing information about the page number, size, total pages, and total elements of the pageable.",
+              "description": "a `PageInfo` object containing page number, size, total pages, and total elements.",
               "complex_type": false
             },
             "name": "of",
             "location": {
-              "start": 38,
+              "start": 39,
               "insert": 26,
               "offset": " ",
               "indent": 4,
               "comment": {
                 "start": 25,
-                "end": 37
+                "end": 38
               }
             },
             "item_type": "method",
             "length": 8,
-            "docLength": 12
+            "docLength": 13
           }
         ]
       }
