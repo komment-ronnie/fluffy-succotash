@@ -1,13 +1,13 @@
 
 const a = () => {
-  console.log("a");
+  console.log("d");
   process.exit(0);
 
 }
 
 
-const b = () => {
-  console.log("a");
+const x = () => {
+  console.log("e");
   process.exit(0);
 
 }
