@@ -41,6 +41,12 @@ parser.add_argument('--port', default=None, type=int)
 
 
 def main():
+    """
+    Sets up a deep learning model for depth estimation using a variant of the VIT
+    framework. It trains the model on a dataset, evaluates its performance at
+    various epochs, and saves the best model so far to disk.
+
+    """
     args = parser.parse_args()
     
     warnings.simplefilter('ignore', np.RankWarning)

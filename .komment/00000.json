@@ -1,0 +1,31 @@
+[
+  {
+    "name": "source1.py",
+    "path": "source1.py",
+    "content": {
+      "structured": {
+        "description": "A deep learning model called DepthAnythingV2 for metric depth estimation and trains it on a dataset using the AdamW optimizer. The code then evaluates the model's performance at various points during training and saves the best-performing model to a checkpoint file.",
+        "items": [
+          {
+            "id": "3c8d988a-c9d6-a596-ca47-98a9dcafd22f",
+            "ancestors": [],
+            "description": "Sets up a deep learning model for depth estimation using a variant of the VIT framework. It trains the model on a dataset, evaluates its performance at various epochs, and saves the best model so far to disk.",
+            "params": [],
+            "returns": null,
+            "name": "main",
+            "location": {
+              "start": 43,
+              "insert": 44,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 166,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  }
+]
