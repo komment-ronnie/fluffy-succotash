@@ -10,9 +10,9 @@ import org.springframework.data.domain.Pageable;
 
 /**
  * Is a data structure that encapsulates information about pages and elements in a
- * query result. It provides the current page number, page limit, total pages, and
- * total elements. The class uses Lombok to implement access modifiers and automatic
- * creation of getters, setters, and toString methods.
+ * query result. It provides current page number, page limit, total pages, and total
+ * elements. The class uses Lombok to implement access modifiers and automatic creation
+ * of getters, setters, and toString methods.
  */
 @EqualsAndHashCode
 @ToString
@@ -24,16 +24,17 @@ public class PageInfo {
   private final int totalPages;
   private final long totalElements;
     /**
-     * Creates a `PageInfo` object containing information about a given pageable and page,
-     * including the current page number, page size, total pages, and total elements.
+     * Generates a `PageInfo` object containing information about the number of pages,
+     * page size, total pages, and total elements of a given pageable and page.
      * 
-     * @param pageable pageable information of the data being processed, providing the
-     * page number, page size, total pages, and total elements for the current page.
+     * @param pageable page request parameters, such as the page number and page size,
+     * which are used to determine the corresponding page of data.
      * 
-     * @param page current page being processed, providing its total elements and pages
-     * count to be used in calculating the page number and size for output.
+     * @param page current page being processed, providing information on its position,
+     * size, total pages, and total elements within thePageable object.
      * 
-     * @returns a `PageInfo` object containing information about the current page of data.
+     * @returns a `PageInfo` object containing information about the page number, size,
+     * total pages, and total elements of the pageable.
      */
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "source.java",
+    "path": "source.java",
+    "content": {
+      "structured": {
+        "description": "A `PageInfo` class that encapsulates information about pages and elements in a query result. It provides current page number, page limit, total pages, and total elements through access modifiers, automatic creation of getters, setters, and toString methods using Lombok. Additionally, the class provides a constructor for creating `PageInfo` objects from pageable and page information, and a static method for creating `PageInfo` objects from pageable and current page information.",
+        "items": [
+          {
+            "id": "e2af6716-9339-2598-844a-1d096a787999",
+            "ancestors": [],
+            "description": "Is a data structure that encapsulates information about pages and elements in a query result. It provides current page number, page limit, total pages, and total elements. The class uses Lombok to implement access modifiers and automatic creation of getters, setters, and toString methods.",
+            "name": "PageInfo",
+            "location": {
+              "start": 17,
+              "insert": 11,
+              "offset": " ",
+              "indent": 0,
+              "comment": {
+                "start": 10,
+                "end": 16
+              }
+            },
+            "item_type": "class",
+            "length": 30,
+            "docLength": 6
+          },
+          {
+            "id": "5141d1d9-3fc6-cc90-8d4b-5f72ecd8b97e",
+            "ancestors": [
+              "e2af6716-9339-2598-844a-1d096a787999"
+            ],
+            "description": "Generates a `PageInfo` object containing information about the number of pages, page size, total pages, and total elements of a given pageable and page.",
+            "params": [
+              {
+                "name": "pageable",
+                "type_name": "Pageable",
+                "description": "page request parameters, such as the page number and page size, which are used to determine the corresponding page of data.",
+                "complex_type": false
+              },
+              {
+                "name": "page",
+                "type_name": "Page<?>",
+                "description": "current page being processed, providing information on its position, size, total pages, and total elements within thePageable object.",
+                "complex_type": false
+              }
+            ],
+            "returns": {
+              "type_name": "PageInfo",
+              "description": "a `PageInfo` object containing information about the page number, size, total pages, and total elements of the pageable.",
+              "complex_type": false
+            },
+            "name": "of",
+            "location": {
+              "start": 38,
+              "insert": 26,
+              "offset": " ",
+              "indent": 4,
+              "comment": {
+                "start": 25,
+                "end": 37
+              }
+            },
+            "item_type": "method",
+            "length": 8,
+            "docLength": 12
+          }
+        ]
+      }
+    }
+  }
+]
