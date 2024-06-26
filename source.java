@@ -11,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 @ToString
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE)
+  
 public class PageInfo {
   private final int currentPage;
   private final int pageLimit;
