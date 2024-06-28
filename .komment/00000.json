@@ -126,5 +126,34 @@
         ]
       }
     }
+  },
+  {
+    "name": "a.py",
+    "path": "a.py",
+    "content": {
+      "structured": {
+        "description": "And calls a function named `func()` that prints numbers from 1 to 4 to the console. The function uses the built-in `print()` function to output each number. No additional packages or functions are used in this simple example.",
+        "items": [
+          {
+            "id": "3f03798c-5b8a-17ac-a345-f65e2c48743e",
+            "ancestors": [],
+            "description": "Prints four numbers (1, 2, 3, and 4) to the console.",
+            "params": [],
+            "returns": null,
+            "name": "func",
+            "location": {
+              "start": 1,
+              "insert": 2,
+              "offset": " ",
+              "indent": 2,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
   }
 ]
