@@ -12,7 +12,6 @@ from torch.utils.data import DataLoader
 from torch.optim import AdamW
 import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
-
 from dataset.hypersim import Hypersim
 from dataset.kitti import KITTI
 from dataset.vkitti2 import VKITTI2
