@@ -40,10 +40,8 @@ parser.add_argument('--port', default=None, type=int)
 
 def main():
     """
-    Generates high-quality summaries of Java code based on user input. It performs
-    various tasks, including setting up a distributed training environment for a
-    depth estimation model using PyTorch and TensorFlow, defining the training and
-    validation sets, and tracking the model's performance during training.
+    Defines a deep learning model for depth estimation and trains it on a distributed
+    dataset using an AdamW optimizer and SiLogLoss criterion.
 
     """
     args = parser.parse_args()
