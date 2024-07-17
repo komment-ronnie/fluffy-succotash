@@ -1,27 +1,62 @@
 [
   {
-    "name": "source1.py",
-    "path": "source1.py",
+    "name": "source.java",
+    "path": "source.java",
     "content": {
       "structured": {
-        "description": "A deep learning model called DepthAnythingV2 for metric depth estimation and trains it on a dataset using the AdamW optimizer. The code then evaluates the model's performance at various points during training and saves the best-performing model to a checkpoint file.",
+        "description": "A `PageInfo` class that contains information about a page of data, including the current page number, page size, total pages, and total elements. The `of` method creates a new `PageInfo` object from a `Pageable` and a `Page`.",
         "items": [
           {
-            "id": "3c8d988a-c9d6-a596-ca47-98a9dcafd22f",
+            "id": "c51c0c39-b44b-8f97-6f44-7b0cd36f1adf",
             "ancestors": [],
-            "description": "Sets up a deep learning model for depth estimation using a variant of the VIT framework. It trains the model on a dataset, evaluates its performance at various epochs, and saves the best model so far to disk.",
-            "params": [],
-            "returns": null,
-            "name": "main",
+            "description": "Is a data structure that encapsulates information about a page of results from a larger dataset. It provides the current page number, page limit, total pages, and total elements in the dataset. The class also includes static methods for creating instances of the class based on Pageable objects and their associated pages.",
+            "name": "PageInfo",
             "location": {
-              "start": 43,
-              "insert": 44,
+              "start": 10,
+              "insert": 10,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "class",
+            "length": 19,
+            "docLength": null
+          },
+          {
+            "id": "87780f43-23b1-ce8b-2640-437195b701f9",
+            "ancestors": [
+              "c51c0c39-b44b-8f97-6f44-7b0cd36f1adf"
+            ],
+            "description": "Transforms a `Pageable` object and an associated `Page` object into a `PageInfo` instance, providing information about the page number, size, total pages, and total elements.",
+            "params": [
+              {
+                "name": "pageable",
+                "type_name": "Pageable",
+                "description": "page request parameters, such as the number of pages to retrieve or the page size.",
+                "complex_type": false
+              },
+              {
+                "name": "page",
+                "type_name": "Page<?>",
+                "description": "current page being processed, providing information on its position and size within the overall paginated result set.",
+                "complex_type": false
+              }
+            ],
+            "returns": {
+              "type_name": "PageInfo",
+              "description": "a `PageInfo` object containing page-related metadata.",
+              "complex_type": false
+            },
+            "name": "of",
+            "location": {
+              "start": 20,
+              "insert": 20,
               "offset": " ",
               "indent": 4,
               "comment": null
             },
-            "item_type": "function",
-            "length": 166,
+            "item_type": "method",
+            "length": 8,
             "docLength": null
           }
         ]
