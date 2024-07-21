@@ -160,5 +160,38 @@
         ]
       }
     }
+  },
+  {
+    "name": "a.js",
+    "path": "a.js",
+    "content": {
+      "structured": {
+        "description": "An arrow function `a` that logs the value 0 to the console using the `console.log()` method from the Browser API. The `=>` symbol indicates a lambda expression defining an anonymous function.",
+        "items": [
+          {
+            "id": "8cec0143-ac44-1d97-c346-36201237fa11",
+            "ancestors": [],
+            "description": "Logs the value `0` to the console when invoked.",
+            "params": [],
+            "usage": {
+              "language": "javascript",
+              "code": "a();\n",
+              "description": "\nThis line of code will execute the function and log \"0\" to the console."
+            },
+            "name": "a",
+            "location": {
+              "start": 1,
+              "insert": 1,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 4,
+            "docLength": null
+          }
+        ]
+      }
+    }
   }
 ]
