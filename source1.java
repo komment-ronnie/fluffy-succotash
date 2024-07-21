@@ -7,12 +7,6 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * Is a data structure used to represent information about a page of elements. It
- * consists of four fields: currentPage, pageLimit, totalPages, and totalElements.
- * The class provides a convenient way to create instances of PageInfo from a Pageable
- * object and its corresponding Page.
- */
 @EqualsAndHashCode
 @ToString
 @Getter
