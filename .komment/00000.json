@@ -193,5 +193,39 @@
         ]
       }
     }
+  },
+  {
+    "name": "source1.py",
+    "path": "source1.py",
+    "content": {
+      "structured": {
+        "description": "A training script for a depth estimation model using PyTorch and DDP (Distributed Data Parallel) for multi-GPU training. The model is trained on a dataset consisting of RGB images and their corresponding depth maps, using a SiLogLoss criterion. The code also includes evaluation metrics such as abs_rel, sq_rel, rmse, rmse_log, log10, and silog, which are calculated on the validation set.",
+        "items": [
+          {
+            "id": "e4bd1f7f-cd34-8187-e84d-b5b47f1eb227",
+            "ancestors": [],
+            "description": "Initializes a distributed depth estimation model, trains it on a dataset using AdamW optimizer and SiLogLoss criterion, evaluates its performance on validation set, and saves the best checkpoint.",
+            "params": [],
+            "returns": null,
+            "usage": {
+              "language": "python",
+              "code": "if __name__ == \"__main__\":\n    args = argparse.Namespace()\n    args.encoder = \"vits\"\n    args.port = 1234\n    args.save_path = \"/path/to/saved/model\"\n    args.min_depth = 0.1\n    args.max_depth = 100.0\n    args.img_size = (640, 480)\n    args.bs = 16\n    args.epochs = 10\n    main(args)",
+              "description": ""
+            },
+            "name": "main",
+            "location": {
+              "start": 42,
+              "insert": 43,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 166,
+            "docLength": null
+          }
+        ]
+      }
+    }
   }
 ]

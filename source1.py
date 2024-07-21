@@ -5,6 +5,7 @@ import pprint
 import random
 import warnings
 import numpy as np
+
 import torch
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
@@ -39,6 +40,12 @@ parser.add_argument('--port', default=None, type=int)
 
 
 def main():
+    """
+    Initializes a distributed depth estimation model, trains it on a dataset using
+    AdamW optimizer and SiLogLoss criterion, evaluates its performance on validation
+    set, and saves the best checkpoint.
+
+    """
     args = parser.parse_args()
     
     warnings.simplefilter('ignore', np.RankWarning)
