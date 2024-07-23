@@ -7,13 +7,11 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-
-
 /**
- * Is designed to encapsulate pagination metadata for Spring Data Pageable API results.
- * It provides a static method "of" to create an instance of PageInfo from a given
- * Pageable and a Page object, utilizing various properties such as current page
- * number, total pages, and total elements.
+ * Represents a page of data in a paginated result set. It encapsulates metadata about
+ * the current and total pages, as well as the total number of elements. The class
+ * provides a static factory method to create instances from Spring Data Pageable and
+ * Page objects.
  */
 @EqualsAndHashCode
 @ToString
@@ -25,18 +23,18 @@ public class PageInfo {
   private final int totalPages;
   private final long totalElements;
     /**
-     * Constructs a `PageInfo` object from provided parameters. It takes a `Pageable` and
-     * a `Page` as input, extracting information such as the current page number, page
-     * size, total pages, and total elements to create the `PageInfo`.
+     * Creates a `PageInfo` object with parameters taken from the `pageable` and `page`
+     * objects, which include the current page number, page size, total pages, and total
+     * elements. It initializes these properties within a new instance of the `PageInfo`
+     * class.
      * 
-     * @param pageable pagination criteria for retrieving data, allowing to specify the
-     * page number and page size.
+     * @param pageable parameters for pagination, including the page number and size,
+     * which are used to create a new instance of the `PageInfo` class.
      * 
-     * @param page result of a paginated query, providing information about the total
-     * number of pages and elements.
+     * @param page result of pagination, providing information about the total number of
+     * pages and elements.
      * 
-     * @returns a `PageInfo` object containing page number, page size, total pages, and
-     * total elements.
+     * @returns a `PageInfo` object with four attributes.
      */
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
