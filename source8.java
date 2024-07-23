@@ -7,10 +7,9 @@ import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 /**
- * Is designed to store and manipulate information about a page of data, including
- * current page number, page size, total pages, and total elements. The class provides
- * a constructor for creating new instances based on a provided Pageable object and
- * the corresponding Page object.
+ * Is designed to encapsulate information about a page of data. It provides a static
+ * method to generate an instance based on Pageable and Page objects, which contains
+ * details such as the current page number, page size, total pages, and total elements.
  */
 @EqualsAndHashCode
 @ToString
@@ -23,17 +22,17 @@ public class PageInfo {
   private final long totalElements;
   
     /**
-     * Generates a `PageInfo` object containing information about the number of pages,
-     * page size, total pages, and total elements for a given `Pageable` and `Page`.
+     * Initializes a new instance of `PageInfo`, which represents pagination information,
+     * using parameters from `Pageable` and `Page`. It sets properties such as page number,
+     * page size, total pages, and total elements based on the input.
      * 
-     * @param pageable page request, providing information about the number of pages and
-     * elements per page.
+     * @param pageable pager used to extract the necessary information from the provided
+     * page, such as the current page number and page size.
      * 
-     * @param page current page being processed, providing the total number of elements
-     * on that page.
+     * @param page result of pagination, providing total pages and total elements for the
+     * given query or request.
      * 
-     * @returns a `PageInfo` object containing four properties: page number, page size,
-     * total pages, and total elements.
+     * @returns an instance of `PageInfo`, containing pagination metadata.
      */
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
