@@ -1,7 +1,7 @@
 def func():
+  
   """
-  Prints the numbers 1 through 4 to the console, one per line, without any input
-  or return values.
+  Prints numbers from 1 to 4 in sequence, displaying each number on a separate line.
 
   """
   print(1)

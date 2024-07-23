@@ -145,29 +145,29 @@
     "path": "a.py",
     "content": {
       "structured": {
-        "description": "And executes a function named func. The function prints integers from 1 to 4 in sequence.",
+        "description": "And invokes a function called func that prints the integers 1 through 4 to the console in sequence. The print statements produce output directly, without any processing or manipulation of the printed values.",
         "items": [
           {
-            "id": "958d21ce-5ecd-df9b-3d44-156b6adf1b99",
+            "id": "334a4a1f-ba42-92b4-9a41-848c7c8579ba",
             "ancestors": [],
-            "description": "Prints the numbers 1 through 4 to the console, one per line, without any input or return values.",
+            "description": "Prints numbers from 1 to 4 in sequence, displaying each number on a separate line.",
             "params": [],
             "returns": null,
             "usage": {
               "language": "python",
-              "code": "func()\nresult = func()\n",
+              "code": "func()\n",
               "description": ""
             },
             "name": "func",
             "location": {
               "start": 1,
-              "insert": 2,
+              "insert": 3,
               "offset": " ",
               "indent": 2,
               "comment": null
             },
             "item_type": "function",
-            "length": 5,
+            "length": 6,
             "docLength": null
           }
         ]
