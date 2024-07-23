@@ -1,11 +1,11 @@
 /**
- * @description Defines an immediately invoked arrow function that logs the number 0
- * to the console when executed. The function is called as soon as it is defined,
- * without being explicitly invoked.
+ * @description Defines an immediately invoked arrow function that logs "0" to the
+ * console when executed, without returning any value or accepting any arguments.
  */
 const a = () => {
-
   
   console.log(0);
 
+
+  
 }
