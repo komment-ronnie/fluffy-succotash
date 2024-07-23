@@ -212,23 +212,23 @@
     "path": "source1.py",
     "content": {
       "structured": {
-        "description": "A training script for a deep learning model called Depth Anything V2, designed for metric depth estimation tasks such as estimating depth maps from images. The model utilizes the PyTorch framework and leverages distributed training with multiple GPUs or nodes.",
+        "description": "A deep learning model called Depth Anything V2 for metric depth estimation. The code implements a training loop using AdamW optimizer and SiLogLoss criterion on Hypersim or VKITTI2 dataset with distributed training across multiple GPUs using PyTorch's DistributedDataParallel module. It evaluates the model's performance by computing various metrics such as abs_rel, sq_rel, rmse, etc., and saves the best-performing model checkpoint during training.",
         "items": [
           {
-            "id": "c86d7635-b92d-abb6-964e-252c4435c1e9",
+            "id": "2563ca8b-57e5-c2a4-0440-52500398fa7c",
             "ancestors": [],
-            "description": "Initializes a deep learning model for depth estimation from images and trains it on a dataset using distributed training with PyTorch's DistributedDataParallel module. It also evaluates the model's performance on a validation set and saves the best-performing checkpoint.",
+            "description": "Initializes a deep learning model for depth estimation from stereo images. It sets up distributed training, loads data, defines the model architecture, and trains it using AdamW optimizer with learning rate scheduling.",
             "params": [],
             "returns": null,
             "usage": {
               "language": "python",
-              "code": "if __name__ == \"__main__\":\n    args = argparse.Namespace(port=12345, \n                             img_size=(512, 384), \n                             bs=2, \n                             epochs=10, \n                             dataset='hypersim', \n                             encoder='vits', \n                             max_depth=10.0)\n    main()",
+              "code": "if __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Depth Anything V2')\n    args = parser.parse_args()\n    main()",
               "description": ""
             },
             "name": "main",
             "location": {
-              "start": 42,
-              "insert": 43,
+              "start": 41,
+              "insert": 42,
               "offset": " ",
               "indent": 4,
               "comment": null

@@ -5,7 +5,6 @@ import pprint
 import random
 import warnings
 import numpy as np
-
 import torch
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
@@ -41,10 +40,9 @@ parser.add_argument('--port', default=None, type=int)
 
 def main():
     """
-    Initializes a deep learning model for depth estimation from images and trains
-    it on a dataset using distributed training with PyTorch's DistributedDataParallel
-    module. It also evaluates the model's performance on a validation set and saves
-    the best-performing checkpoint.
+    Initializes a deep learning model for depth estimation from stereo images. It
+    sets up distributed training, loads data, defines the model architecture, and
+    trains it using AdamW optimizer with learning rate scheduling.
 
     """
     args = parser.parse_args()
