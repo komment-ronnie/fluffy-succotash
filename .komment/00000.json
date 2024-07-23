@@ -174,12 +174,12 @@
     "path": "a.js",
     "content": {
       "structured": {
-        "description": "An anonymous arrow function named `a` that logs a message to the console. The function is immediately invoked, causing the `console.log` statement to execute.",
+        "description": "An anonymous arrow function `a` that logs a value 0 to the console using the `console.log` method. The function is not invoked within this scope.",
         "items": [
           {
-            "id": "fe86ee93-6889-a09e-e044-61f4fa6ceeba",
+            "id": "e4128af2-e7b0-169f-f949-42d794af60a4",
             "ancestors": [],
-            "description": "Defines an immediately invoked anonymous function (IIFE) that logs '0' to the console when called. The function is executed as soon as it's defined, making it a self-contained block of code with no explicit return value.",
+            "description": "Defines an immediately invoked arrow function that logs the number 0 to the console when executed. The function is called as soon as it is defined, without being explicitly invoked.",
             "params": [],
             "usage": {
               "language": "javascript",
