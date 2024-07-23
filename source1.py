@@ -41,9 +41,10 @@ parser.add_argument('--port', default=None, type=int)
 
 def main():
     """
-    Initializes a distributed depth estimation model, trains it on a dataset using
-    AdamW optimizer and SiLogLoss criterion, evaluates its performance on validation
-    set, and saves the best checkpoint.
+    Initializes a deep learning model for depth estimation from images and trains
+    it on a dataset using distributed training with PyTorch's DistributedDataParallel
+    module. It also evaluates the model's performance on a validation set and saves
+    the best-performing checkpoint.
 
     """
     args = parser.parse_args()
