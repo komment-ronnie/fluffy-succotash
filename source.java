@@ -8,9 +8,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 /**
- * Represents pagination data of a page. It is designed to hold essential information
- * about the current page such as its number and total elements. The class provides
- * a static factory method to create instances from Spring's Pageable and Page objects.
+ * Encapsulates page-related data for efficient pagination. It is designed to work
+ * with Spring Data's Pageable and Page interfaces. The class provides a static factory
+ * method to create instances of PageInfo from Pageable and Page objects.
  */
 @EqualsAndHashCode
 @ToString
@@ -22,17 +22,17 @@ public class PageInfo {
   private final int totalPages;
   private final long totalElements;
     /**
-     * Returns a new `PageInfo` object populated with data from the provided `Pageable`
-     * and `Page`. It extracts page number, page size, total pages, and total elements
-     * from these objects to initialize the `PageInfo` instance.
+     * Initializes a `PageInfo` object with parameters from a given `Pageable` and a
+     * `Page`. It takes the page number, page size, total pages, and total elements from
+     * the input objects and constructs a new `PageInfo` instance.
      * 
-     * @param pageable pagination information for retrieving data, providing the current
-     * page number and page size.
+     * @param pageable pagination criteria for the requested data, allowing for the
+     * retrieval of specific pages and sizes of elements.
      * 
-     * @param page Page object that contains the total number of pages and elements, which
-     * is used to construct the PageInfo object.
+     * @param page result of pagination operation, providing information about the total
+     * number of elements and pages.
      * 
-     * @returns a `PageInfo` object containing pagination details.
+     * @returns a PageInfo object with specified attributes.
      */
     public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
