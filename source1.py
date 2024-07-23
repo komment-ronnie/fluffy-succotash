@@ -41,6 +41,12 @@ parser.add_argument('--port', default=None, type=int)
 
 
 def main():
+    """
+    Initializes a neural network model for depth estimation and trains it on a
+    dataset using distributed training. It evaluates the model's performance on a
+    validation set and saves checkpoints.
+
+    """
     args = parser.parse_args()
     
     warnings.simplefilter('ignore', np.RankWarning)
