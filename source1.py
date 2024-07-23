@@ -5,6 +5,7 @@ import pprint
 import random
 import warnings
 import numpy as np
+
 import torch
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
@@ -39,9 +40,9 @@ parser.add_argument('--port', default=None, type=int)
 
 def main():
     """
-    Initializes and trains a deep learning model for depth estimation. It handles
-    distributed training, logging, and evaluation metrics such as mean average
-    error (MAE) and root mean squared error (RMSE).
+    Initializes a depth estimation model and trains it on a dataset using distributed
+    parallel processing. It evaluates the model's performance on a validation set
+    and saves the best-performing checkpoint.
 
     """
     args = parser.parse_args()

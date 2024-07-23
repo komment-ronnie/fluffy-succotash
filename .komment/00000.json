@@ -212,23 +212,23 @@
     "path": "source1.py",
     "content": {
       "structured": {
-        "description": "And trains a neural network-based depth estimation model using PyTorch, specifically for the Depth Anything V2 architecture. The model is trained on various datasets such as Hypersim and VKITTI2, with distributed training enabled using PyTorch's DistributedDataParallel module. The model uses AdamW optimizer and SiLogLoss criterion to optimize its parameters.",
+        "description": "And trains a deep learning model called DepthAnythingV2 for metric depth estimation on various datasets using PyTorch. The model is trained using an AdamW optimizer with a custom loss function, SiLogLoss, and evaluated using metrics such as d1, d2, d3, abs_rel, sq_rel, rmse, rmse_log, log10, silog.",
         "items": [
           {
-            "id": "e7b90237-9cc2-6f81-f54c-9d55b6292882",
+            "id": "25aab828-2b0a-ab8e-3c4a-9d53808089b8",
             "ancestors": [],
-            "description": "Initializes and trains a deep learning model for depth estimation. It handles distributed training, logging, and evaluation metrics such as mean average error (MAE) and root mean squared error (RMSE).",
+            "description": "Initializes a depth estimation model and trains it on a dataset using distributed parallel processing. It evaluates the model's performance on a validation set and saves the best-performing checkpoint.",
             "params": [],
             "returns": null,
             "usage": {
               "language": "python",
-              "code": "if __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Depth Anything')\n    args, unknown = parser.parse_known_args()\n    \n    main()",
+              "code": "if __name__ == \"__main__\":\n    args = argparse.Namespace()\n    args.encoder = 'vits'\n    args.port = 1234\n    args.save_path = 'path_to_save_file'\n    args.bs = 16\n    args.img_size = 256\n    args.min_depth = 0.1\n    args.max_depth = 100\n    main()",
               "description": ""
             },
             "name": "main",
             "location": {
-              "start": 40,
-              "insert": 41,
+              "start": 41,
+              "insert": 42,
               "offset": " ",
               "indent": 4,
               "comment": null
