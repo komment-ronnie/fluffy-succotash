@@ -37,12 +37,11 @@ parser.add_argument('--save-path', type=str, required=True)
 parser.add_argument('--local-rank', default=0, type=int)
 parser.add_argument('--port', default=None, type=int)
 
-
 def main():
     """
-    Initializes a deep learning model for depth estimation from stereo images. It
-    sets up distributed training, loads data, defines the model architecture, and
-    trains it using AdamW optimizer with learning rate scheduling.
+    Initializes and trains a deep learning model for depth estimation. It handles
+    distributed training, logging, and evaluation metrics such as mean average
+    error (MAE) and root mean squared error (RMSE).
 
     """
     args = parser.parse_args()

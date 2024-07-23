@@ -212,23 +212,23 @@
     "path": "source1.py",
     "content": {
       "structured": {
-        "description": "A deep learning model called Depth Anything V2 for metric depth estimation. The code implements a training loop using AdamW optimizer and SiLogLoss criterion on Hypersim or VKITTI2 dataset with distributed training across multiple GPUs using PyTorch's DistributedDataParallel module. It evaluates the model's performance by computing various metrics such as abs_rel, sq_rel, rmse, etc., and saves the best-performing model checkpoint during training.",
+        "description": "And trains a neural network-based depth estimation model using PyTorch, specifically for the Depth Anything V2 architecture. The model is trained on various datasets such as Hypersim and VKITTI2, with distributed training enabled using PyTorch's DistributedDataParallel module. The model uses AdamW optimizer and SiLogLoss criterion to optimize its parameters.",
         "items": [
           {
-            "id": "2563ca8b-57e5-c2a4-0440-52500398fa7c",
+            "id": "e7b90237-9cc2-6f81-f54c-9d55b6292882",
             "ancestors": [],
-            "description": "Initializes a deep learning model for depth estimation from stereo images. It sets up distributed training, loads data, defines the model architecture, and trains it using AdamW optimizer with learning rate scheduling.",
+            "description": "Initializes and trains a deep learning model for depth estimation. It handles distributed training, logging, and evaluation metrics such as mean average error (MAE) and root mean squared error (RMSE).",
             "params": [],
             "returns": null,
             "usage": {
               "language": "python",
-              "code": "if __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Depth Anything V2')\n    args = parser.parse_args()\n    main()",
+              "code": "if __name__ == \"__main__\":\n    parser = argparse.ArgumentParser(description='Depth Anything')\n    args, unknown = parser.parse_known_args()\n    \n    main()",
               "description": ""
             },
             "name": "main",
             "location": {
-              "start": 41,
-              "insert": 42,
+              "start": 40,
+              "insert": 41,
               "offset": " ",
               "indent": 4,
               "comment": null
