@@ -1,7 +1,4 @@
 
-/**
- * @description Logs "a" to the console and exits the process with a zero status code.
- */
 const a = () => {
   console.log("a");
   process.exit(0);
