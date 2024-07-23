@@ -73,5 +73,39 @@
         ]
       }
     }
+  },
+  {
+    "name": "source1.py",
+    "path": "source1.py",
+    "content": {
+      "structured": {
+        "description": "A deep learning model for metric depth estimation using the Depth Anything V2 architecture and trains it on various datasets such as Hypersim and VKITTI2. The model is optimized using AdamW optimizer with a custom SiLogLoss function, and evaluated using metrics like absolute relative error, squared relative error, etc.",
+        "items": [
+          {
+            "id": "7a9e0c4b-b604-beb8-744f-03061e41a274",
+            "ancestors": [],
+            "description": "Initializes a neural network model for depth estimation and trains it on a dataset using distributed training. It evaluates the model's performance on a validation set and saves checkpoints.",
+            "params": [],
+            "returns": null,
+            "usage": {
+              "language": "python",
+              "code": "args = Namespace(port=1234, save_path='./checkpoints', encoder='vitb', \n                 max_depth=10.0, bs=8, epochs=20)\nmain(args)",
+              "description": ""
+            },
+            "name": "main",
+            "location": {
+              "start": 43,
+              "insert": 44,
+              "offset": " ",
+              "indent": 4,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 166,
+            "docLength": null
+          }
+        ]
+      }
+    }
   }
 ]
