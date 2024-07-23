@@ -145,14 +145,19 @@
     "path": "a.py",
     "content": {
       "structured": {
-        "description": "And calls a function named `func()` that prints numbers from 1 to 4 to the console. The function uses the built-in `print()` function to output each number. No additional packages or functions are used in this simple example.",
+        "description": "And executes a function named func. The function prints integers from 1 to 4 in sequence.",
         "items": [
           {
-            "id": "3f03798c-5b8a-17ac-a345-f65e2c48743e",
+            "id": "958d21ce-5ecd-df9b-3d44-156b6adf1b99",
             "ancestors": [],
-            "description": "Prints four numbers (1, 2, 3, and 4) to the console.",
+            "description": "Prints the numbers 1 through 4 to the console, one per line, without any input or return values.",
             "params": [],
             "returns": null,
+            "usage": {
+              "language": "python",
+              "code": "func()\nresult = func()\n",
+              "description": ""
+            },
             "name": "func",
             "location": {
               "start": 1,
